@@ -17,7 +17,7 @@ namespace BackUrbanPark
    public enum TipoStatus
     {
         Livre,
-        Ocupado
+        Ocupada
     }
 
     public class Utils

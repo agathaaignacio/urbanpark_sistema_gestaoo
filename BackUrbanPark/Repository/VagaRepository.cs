@@ -25,7 +25,7 @@ namespace BackUrbanPark.Repository
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Vaga? ListarPorId(int id) // Listar por ID tem um parametro
+        public Vaga? ListarPorId(int id) // Listar por ID tem um parâmetros
         {
             string sql = "SELECT id_vaga, numero_vaga, tipo, status FROM vagas WHERE id = @id";
 
@@ -83,6 +83,8 @@ namespace BackUrbanPark.Repository
             return new Vaga(id_vaga, numero_vaga, tipoVaga, tipoStatus);
 
         } //fim MapearVaga
+
+
 
     }
 } //fim namespace

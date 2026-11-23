@@ -11,7 +11,7 @@ namespace BackUrbanPark.Repository
     public static class Banco
     {
         // String de conexão com os dados do servidor MySQL/MariaDB
-        private static readonly string stringDeConexao = "Server=10.91.45.48;Port=3306;Database=urbanpark;Uid=admin;Pwd=12345678";
+        private static readonly string stringDeConexao = "Server=10.91.45.48;Port=3306;Database=urbanpark;Uid=admin;Pwd=12345678;SslMode=None;Connection Timeout=15";
 
         /// <summary>
         /// Testa a conexão com o banco de dados e exibe a versão atual.
