@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BackUrbanPark.Model;
+using FrmUrbanPark.Parts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +12,69 @@ using System.Windows.Forms;
 
 namespace FrmUrbanPark
 {
-    public partial class FrmListVagas : Form
+    public partial class frmListVagas : Form
     {
-        public FrmListVagas()
+        public frmListVagas()
         {
             InitializeComponent();
+        }
+
+        private void frmListVagas_Load(object sender, EventArgs e)
+        {
+            carregarDadosEMontarVisualizacao();
+        }
+
+        private void carregarDadosEMontarVisualizacao()
+        {
+
+            List<Vaga> listaDevagas = VagaRepository.ListarTodas();
+
+            flwCardVagas.Controls.Clear();
+
+            foreach (Vaga vaga in listaDevagas)
+            {
+
+                string strNumeroVaga = vaga.Numero_vaga.ToString();
+                StatusVaga statusVaga = Enum.Parse<StatusVaga>(vaga.TipoStatus.ToString());
+                int idVaga = vaga.Id;
+
+                ctrStatusVagas cardVaga = new ctrStatusVagas();
+
+                cardVaga.IdVaga = idVaga;
+                cardVaga.StatusVaga = statusVaga;
+                cardVaga.NumeroVaga = strNumeroVaga;
+
+                cardVaga.CardClicado += cardVaga_click;
+
+                flwCardVagas.Controls.Add(cardVaga);
+            }
+        }
+
+        public void cardVaga_click(object sender, EventArgs e)
+        {
+            ctrStatusVagas cardSelecionado = (ctrStatusVagas)sender;
+
+            MessageBox.Show($"Vaga: {cardSelecionado.NumeroVaga} || Status: {cardSelecionado.StatusVaga}");
+
+
+        }
+
+
+        private void flwCardVagas_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+
+            MessageBox.Show(b.Text);
         }
     }
 }
