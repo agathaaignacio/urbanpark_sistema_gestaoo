@@ -62,7 +62,7 @@
             pnlCabecalho.Dock = DockStyle.Top;
             pnlCabecalho.Location = new Point(0, 0);
             pnlCabecalho.Name = "pnlCabecalho";
-            pnlCabecalho.Size = new Size(758, 84);
+            pnlCabecalho.Size = new Size(836, 84);
             pnlCabecalho.TabIndex = 0;
             // 
             // picLogo
@@ -72,7 +72,7 @@
             picLogo.Image = (Image)resources.GetObject("picLogo.Image");
             picLogo.Location = new Point(0, 0);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(758, 84);
+            picLogo.Size = new Size(836, 84);
             picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
@@ -262,7 +262,7 @@
             btnRegistrarEntrada.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRegistrarEntrada.Image = (Image)resources.GetObject("btnRegistrarEntrada.Image");
             btnRegistrarEntrada.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegistrarEntrada.Location = new Point(460, 355);
+            btnRegistrarEntrada.Location = new Point(469, 378);
             btnRegistrarEntrada.Name = "btnRegistrarEntrada";
             btnRegistrarEntrada.Size = new Size(148, 40);
             btnRegistrarEntrada.TabIndex = 6;
@@ -276,7 +276,7 @@
             btnCancelar.Font = new Font("Segoe UI", 9.75F);
             btnCancelar.Image = (Image)resources.GetObject("btnCancelar.Image");
             btnCancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCancelar.Location = new Point(643, 355);
+            btnCancelar.Location = new Point(652, 378);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 40);
             btnCancelar.TabIndex = 7;
@@ -289,7 +289,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 242, 242);
-            ClientSize = new Size(758, 416);
+            ClientSize = new Size(836, 447);
             Controls.Add(btnCancelar);
             Controls.Add(btnRegistrarEntrada);
             Controls.Add(grpMovimentacao);

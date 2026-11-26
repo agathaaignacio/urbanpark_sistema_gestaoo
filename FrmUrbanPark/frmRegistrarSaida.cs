@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FrmUrbanPark
 {
-    public partial class picLogo : Form
+    public partial class frmRegistrarSaida : Form
     {
-        public picLogo()
+        public frmRegistrarSaida()
         {
             InitializeComponent();
         }

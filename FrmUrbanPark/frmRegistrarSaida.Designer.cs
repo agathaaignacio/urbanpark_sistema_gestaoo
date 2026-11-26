@@ -1,6 +1,6 @@
 ﻿namespace FrmUrbanPark
 {
-    partial class picLogo
+    partial class frmRegistrarSaida
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(picLogo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrarSaida));
             pnlCabecalho = new Panel();
             pictureBox1 = new PictureBox();
             grpBuscarVeiculo = new GroupBox();
