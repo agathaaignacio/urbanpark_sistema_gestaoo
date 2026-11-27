@@ -62,7 +62,7 @@
             pnlCabecalho.Dock = DockStyle.Top;
             pnlCabecalho.Location = new Point(0, 0);
             pnlCabecalho.Name = "pnlCabecalho";
-            pnlCabecalho.Size = new Size(836, 84);
+            pnlCabecalho.Size = new Size(767, 84);
             pnlCabecalho.TabIndex = 0;
             // 
             // picLogo
@@ -72,11 +72,10 @@
             picLogo.Image = (Image)resources.GetObject("picLogo.Image");
             picLogo.Location = new Point(0, 0);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(836, 84);
+            picLogo.Size = new Size(767, 84);
             picLogo.SizeMode = PictureBoxSizeMode.StretchImage;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
-            picLogo.Click += pictureBox1_Click;
             // 
             // grpBuscarVeiculo
             // 
@@ -84,7 +83,7 @@
             grpBuscarVeiculo.Controls.Add(mskPlacaveiculo);
             grpBuscarVeiculo.Controls.Add(lblPlacaVeiculo);
             grpBuscarVeiculo.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grpBuscarVeiculo.ForeColor = Color.FromArgb(255, 128, 0);
+            grpBuscarVeiculo.ForeColor = Color.Purple;
             grpBuscarVeiculo.Location = new Point(25, 101);
             grpBuscarVeiculo.Name = "grpBuscarVeiculo";
             grpBuscarVeiculo.Size = new Size(721, 85);
@@ -130,19 +129,20 @@
             grpDadosVeiculo.Controls.Add(txtNomeCliente);
             grpDadosVeiculo.Controls.Add(lblCliente);
             grpDadosVeiculo.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            grpDadosVeiculo.ForeColor = Color.FromArgb(255, 128, 0);
+            grpDadosVeiculo.ForeColor = Color.Purple;
             grpDadosVeiculo.Location = new Point(25, 197);
             grpDadosVeiculo.Name = "grpDadosVeiculo";
-            grpDadosVeiculo.Size = new Size(267, 132);
+            grpDadosVeiculo.Size = new Size(301, 132);
             grpDadosVeiculo.TabIndex = 2;
             grpDadosVeiculo.TabStop = false;
             grpDadosVeiculo.Text = "Dados do Veículo";
             // 
             // txtCorModelo
             // 
-            txtCorModelo.Location = new Point(119, 63);
+            txtCorModelo.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtCorModelo.Location = new Point(104, 63);
             txtCorModelo.Name = "txtCorModelo";
-            txtCorModelo.Size = new Size(132, 27);
+            txtCorModelo.Size = new Size(190, 26);
             txtCorModelo.TabIndex = 4;
             // 
             // lblCorModelo
@@ -158,11 +158,11 @@
             // 
             // txtNomeCliente
             // 
+            txtNomeCliente.Font = new Font("Tahoma", 11F, FontStyle.Bold);
             txtNomeCliente.Location = new Point(75, 22);
             txtNomeCliente.Name = "txtNomeCliente";
-            txtNomeCliente.Size = new Size(150, 27);
+            txtNomeCliente.Size = new Size(182, 25);
             txtNomeCliente.TabIndex = 1;
-            txtNomeCliente.TextChanged += txtNomeCliente_TextChanged;
             // 
             // lblCliente
             // 
@@ -174,7 +174,6 @@
             lblCliente.Size = new Size(50, 17);
             lblCliente.TabIndex = 0;
             lblCliente.Text = "Cliente:";
-            lblCliente.Click += lblCliente_Click;
             // 
             // grpMovimentacao
             // 
@@ -185,7 +184,7 @@
             grpMovimentacao.Controls.Add(txtVagaSelecionada);
             grpMovimentacao.Controls.Add(lblVagaSelecionada);
             grpMovimentacao.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            grpMovimentacao.ForeColor = Color.FromArgb(255, 128, 0);
+            grpMovimentacao.ForeColor = Color.Purple;
             grpMovimentacao.Location = new Point(332, 197);
             grpMovimentacao.Name = "grpMovimentacao";
             grpMovimentacao.Size = new Size(414, 132);
@@ -198,7 +197,7 @@
             dateTimePicker1.CustomFormat = "HH:mm";
             dateTimePicker1.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(126, 93);
+            dateTimePicker1.Location = new Point(128, 61);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(82, 26);
             dateTimePicker1.TabIndex = 6;
@@ -208,7 +207,7 @@
             lblHoraEntrada.AutoSize = true;
             lblHoraEntrada.Font = new Font("Segoe UI", 9.75F);
             lblHoraEntrada.ForeColor = Color.Black;
-            lblHoraEntrada.Location = new Point(6, 98);
+            lblHoraEntrada.Location = new Point(8, 66);
             lblHoraEntrada.Name = "lblHoraEntrada";
             lblHoraEntrada.Size = new Size(108, 17);
             lblHoraEntrada.TabIndex = 5;
@@ -219,7 +218,7 @@
             dtInfoDtEntrada.CalendarFont = new Font("Segoe Script", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtInfoDtEntrada.Font = new Font("Tahoma", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtInfoDtEntrada.Format = DateTimePickerFormat.Custom;
-            dtInfoDtEntrada.Location = new Point(126, 61);
+            dtInfoDtEntrada.Location = new Point(128, 29);
             dtInfoDtEntrada.Name = "dtInfoDtEntrada";
             dtInfoDtEntrada.Size = new Size(128, 26);
             dtInfoDtEntrada.TabIndex = 4;
@@ -230,7 +229,7 @@
             lblDataEntrada.AutoSize = true;
             lblDataEntrada.Font = new Font("Segoe UI", 9.75F);
             lblDataEntrada.ForeColor = Color.Black;
-            lblDataEntrada.Location = new Point(6, 62);
+            lblDataEntrada.Location = new Point(8, 30);
             lblDataEntrada.Name = "lblDataEntrada";
             lblDataEntrada.Size = new Size(106, 17);
             lblDataEntrada.TabIndex = 3;
@@ -238,7 +237,7 @@
             // 
             // txtVagaSelecionada
             // 
-            txtVagaSelecionada.Location = new Point(126, 25);
+            txtVagaSelecionada.Location = new Point(128, 93);
             txtVagaSelecionada.Name = "txtVagaSelecionada";
             txtVagaSelecionada.Size = new Size(122, 27);
             txtVagaSelecionada.TabIndex = 1;
@@ -248,7 +247,7 @@
             lblVagaSelecionada.AutoSize = true;
             lblVagaSelecionada.Font = new Font("Segoe UI", 9.75F);
             lblVagaSelecionada.ForeColor = Color.Black;
-            lblVagaSelecionada.Location = new Point(6, 30);
+            lblVagaSelecionada.Location = new Point(8, 98);
             lblVagaSelecionada.Name = "lblVagaSelecionada";
             lblVagaSelecionada.Size = new Size(114, 17);
             lblVagaSelecionada.TabIndex = 0;
@@ -289,7 +288,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 242, 242);
-            ClientSize = new Size(836, 447);
+            ClientSize = new Size(767, 448);
             Controls.Add(btnCancelar);
             Controls.Add(btnRegistrarEntrada);
             Controls.Add(grpMovimentacao);
@@ -299,6 +298,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmRegistrarEntrada";
             Text = "Registrar Entrada";
+            Load += frmRegistrarEntrada_Load;
             pnlCabecalho.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             grpBuscarVeiculo.ResumeLayout(false);

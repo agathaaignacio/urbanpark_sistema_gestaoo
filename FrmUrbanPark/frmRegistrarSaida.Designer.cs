@@ -45,6 +45,7 @@
             lblCorModelo = new Label();
             lblCliente = new Label();
             grpMovimentacao = new GroupBox();
+            txtDataHoraEntrada = new TextBox();
             dtInfoHrSaida = new DateTimePicker();
             lblHoraSaida = new Label();
             dtInfoDtSaida = new DateTimePicker();
@@ -60,7 +61,6 @@
             lblTarifaVigente = new Label();
             btnRegistrarSaida = new Button();
             btnCancelar = new Button();
-            txtDataHoraEntrada = new TextBox();
             pnlCabecalho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             grpBuscarVeiculo.SuspendLayout();
@@ -76,7 +76,7 @@
             pnlCabecalho.Dock = DockStyle.Top;
             pnlCabecalho.Location = new Point(0, 0);
             pnlCabecalho.Name = "pnlCabecalho";
-            pnlCabecalho.Size = new Size(935, 78);
+            pnlCabecalho.Size = new Size(837, 78);
             pnlCabecalho.TabIndex = 0;
             // 
             // pictureBox1
@@ -85,7 +85,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(935, 78);
+            pictureBox1.Size = new Size(837, 78);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -96,10 +96,10 @@
             grpBuscarVeiculo.Controls.Add(mskPlacaveiculo);
             grpBuscarVeiculo.Controls.Add(lblPlacaVeiculo);
             grpBuscarVeiculo.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            grpBuscarVeiculo.ForeColor = Color.FromArgb(255, 128, 0);
+            grpBuscarVeiculo.ForeColor = Color.Purple;
             grpBuscarVeiculo.Location = new Point(12, 93);
             grpBuscarVeiculo.Name = "grpBuscarVeiculo";
-            grpBuscarVeiculo.Size = new Size(776, 85);
+            grpBuscarVeiculo.Size = new Size(776, 75);
             grpBuscarVeiculo.TabIndex = 1;
             grpBuscarVeiculo.TabStop = false;
             grpBuscarVeiculo.Text = "Buscar Veículo";
@@ -146,10 +146,10 @@
             grpDadosVeiculo.Controls.Add(lblCorModelo);
             grpDadosVeiculo.Controls.Add(lblCliente);
             grpDadosVeiculo.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            grpDadosVeiculo.ForeColor = Color.FromArgb(255, 128, 0);
-            grpDadosVeiculo.Location = new Point(12, 198);
+            grpDadosVeiculo.ForeColor = Color.Purple;
+            grpDadosVeiculo.Location = new Point(12, 174);
             grpDadosVeiculo.Name = "grpDadosVeiculo";
-            grpDadosVeiculo.Size = new Size(387, 296);
+            grpDadosVeiculo.Size = new Size(363, 296);
             grpDadosVeiculo.TabIndex = 2;
             grpDadosVeiculo.TabStop = false;
             grpDadosVeiculo.Text = "Dados do Veículo";
@@ -236,13 +236,23 @@
             grpMovimentacao.Controls.Add(lblDataSaida);
             grpMovimentacao.Controls.Add(lblDataHoraEntrada);
             grpMovimentacao.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            grpMovimentacao.ForeColor = Color.FromArgb(255, 128, 0);
-            grpMovimentacao.Location = new Point(405, 198);
+            grpMovimentacao.ForeColor = Color.Purple;
+            grpMovimentacao.Location = new Point(381, 174);
             grpMovimentacao.Name = "grpMovimentacao";
-            grpMovimentacao.Size = new Size(486, 124);
+            grpMovimentacao.Size = new Size(436, 124);
             grpMovimentacao.TabIndex = 3;
             grpMovimentacao.TabStop = false;
             grpMovimentacao.Text = "Movimentação";
+            // 
+            // txtDataHoraEntrada
+            // 
+            txtDataHoraEntrada.Font = new Font("Tahoma", 12F, FontStyle.Bold);
+            txtDataHoraEntrada.Location = new Point(164, 27);
+            txtDataHoraEntrada.Name = "txtDataHoraEntrada";
+            txtDataHoraEntrada.ReadOnly = true;
+            txtDataHoraEntrada.Size = new Size(173, 27);
+            txtDataHoraEntrada.TabIndex = 10;
+            txtDataHoraEntrada.Text = "22/01/2026 08:15";
             // 
             // dtInfoHrSaida
             // 
@@ -303,10 +313,10 @@
             grpCalculo.Controls.Add(lblTempoPermanencia);
             grpCalculo.Controls.Add(lblTarifaVigente);
             grpCalculo.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            grpCalculo.ForeColor = Color.FromArgb(255, 128, 0);
-            grpCalculo.Location = new Point(405, 328);
+            grpCalculo.ForeColor = Color.Purple;
+            grpCalculo.Location = new Point(381, 304);
             grpCalculo.Name = "grpCalculo";
-            grpCalculo.Size = new Size(486, 166);
+            grpCalculo.Size = new Size(436, 166);
             grpCalculo.TabIndex = 4;
             grpCalculo.TabStop = false;
             grpCalculo.Text = "Cálculo do Estacionamento";
@@ -319,7 +329,7 @@
             pnlValorPagar.Controls.Add(lblValorAPagar);
             pnlValorPagar.Location = new Point(21, 108);
             pnlValorPagar.Name = "pnlValorPagar";
-            pnlValorPagar.Size = new Size(441, 42);
+            pnlValorPagar.Size = new Size(394, 42);
             pnlValorPagar.TabIndex = 8;
             // 
             // lblValorPagar
@@ -342,7 +352,7 @@
             lblValorAPagar.Dock = DockStyle.Right;
             lblValorAPagar.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblValorAPagar.ForeColor = Color.FromArgb(10, 55, 15);
-            lblValorAPagar.Location = new Point(327, 0);
+            lblValorAPagar.Location = new Point(280, 0);
             lblValorAPagar.Name = "lblValorAPagar";
             lblValorAPagar.Padding = new Padding(0, 0, 12, 0);
             lblValorAPagar.Size = new Size(112, 40);
@@ -394,7 +404,7 @@
             btnRegistrarSaida.ForeColor = Color.White;
             btnRegistrarSaida.Image = (Image)resources.GetObject("btnRegistrarSaida.Image");
             btnRegistrarSaida.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegistrarSaida.Location = new Point(567, 504);
+            btnRegistrarSaida.Location = new Point(496, 486);
             btnRegistrarSaida.Name = "btnRegistrarSaida";
             btnRegistrarSaida.Size = new Size(146, 36);
             btnRegistrarSaida.TabIndex = 6;
@@ -408,28 +418,18 @@
             btnCancelar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCancelar.Image = (Image)resources.GetObject("btnCancelar.Image");
             btnCancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCancelar.Location = new Point(734, 504);
+            btnCancelar.Location = new Point(663, 486);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(133, 36);
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
-            // txtDataHoraEntrada
-            // 
-            txtDataHoraEntrada.Font = new Font("Tahoma", 12F, FontStyle.Bold);
-            txtDataHoraEntrada.Location = new Point(164, 27);
-            txtDataHoraEntrada.Name = "txtDataHoraEntrada";
-            txtDataHoraEntrada.ReadOnly = true;
-            txtDataHoraEntrada.Size = new Size(173, 27);
-            txtDataHoraEntrada.TabIndex = 10;
-            txtDataHoraEntrada.Text = "22/01/2026 08:15";
-            // 
-            // picLogo
+            // frmRegistrarSaida
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(935, 552);
+            ClientSize = new Size(837, 534);
             Controls.Add(btnCancelar);
             Controls.Add(btnRegistrarSaida);
             Controls.Add(grpCalculo);
@@ -438,7 +438,7 @@
             Controls.Add(grpBuscarVeiculo);
             Controls.Add(pnlCabecalho);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "picLogo";
+            Name = "frmRegistrarSaida";
             Text = "Registrar Saída";
             pnlCabecalho.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

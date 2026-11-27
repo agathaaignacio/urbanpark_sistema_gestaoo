@@ -55,7 +55,20 @@ namespace FrmUrbanPark
         {
             ctrStatusVagas cardSelecionado = (ctrStatusVagas)sender;
 
-            MessageBox.Show($"Vaga: {cardSelecionado.NumeroVaga} || Status: {cardSelecionado.StatusVaga}");
+            if(cardSelecionado.StatusVaga == StatusVaga.Livre)
+
+            { //Inicializa o formulário de entrada e passa as informações da vaga.
+                frmRegistrarEntrada frmRegistrarEntrada = new frmRegistrarEntrada(cardSelecionado.NumeroVaga,cardSelecionado.IdVaga);
+
+                frmRegistrarEntrada.ShowDialog();
+            }
+            else
+            {
+                frmRegistrarSaida frmRegistrarSaida = new frmRegistrarSaida();
+
+                frmRegistrarSaida.ShowDialog();
+            }
+
 
 
         }
